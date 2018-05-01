@@ -32,8 +32,6 @@ const axios = require('axios');
 
 /*convertCurrency('USD', 'EUR', 100).then((status) => {
     console.log(status);
-}).catch((e) => {
-    console.log(e.message);
 });*/
 
 // ======================================= //
