@@ -30,7 +30,7 @@ const axios = require('axios');
     })
 };*/
 
-/*convertCurrencyAlt('USD', 'EUR', 100).then((status) => {
+/*convertCurrency('USD', 'EUR', 100).then((status) => {
     console.log(status);
 }).catch((e) => {
     console.log(e.message);
@@ -71,6 +71,12 @@ const convertCurrencyAlt = async (from, to, amount) => {
 
     return `${amount} ${from} is worth ${exchangedAmount} ${to}. ${to} can be used in the following countries: ${countries.join(', ')}`;
 };
+
+convertCurrencyAlt('USD', 'EUR', 100).then((status) => {
+    console.log(status);
+}).catch((e) => {
+    console.log(e.message);
+});
 
 /*getExchangeRate('USD', 'CAD').then((rate) => {
     console.log(rate)
